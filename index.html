@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GitHub Repo: A Genetic Opera</title> <!--Only a select few will understand that reference...-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="containter">
+        <h1>GitHub Repository SearchEngine</h1>
+
+        <form>
+            <label for="github-handle">GitHub username</label>
+            <input type="text" name="github-handle" id="js-github-handle" required>
+            <input type="submit" value="Go, go, gadget!">
+        </form>
+        <p id="js-error-message" class="error-message"></p>
+
+        <section class="hidden" id="results">
+            <h2>GitHub repos for: <span id="github-handle"></span></h2>
+            <ul id="repo-list"></ul>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
